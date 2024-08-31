@@ -4,7 +4,7 @@ import pandas as pd
 # Load the CSV file
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r'C:\Users\Praveenkumar\OneDrive\Desktop\CROP_PRICE\Price_Predicted_2024.csv')  # Ensure this path is correct
+    df = pd.read_csv(r'Price_Predicted_2024.csv')  # Ensure this path is correct
     df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
     return df
 
